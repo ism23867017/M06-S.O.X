@@ -1,0 +1,16 @@
+INSTALACION
+
+-dnf install samba	#Instalamos samba
+
+-systemctl status smb	#Comorovamos el estado del servicio
+
+-systemctl start smb	#Iniciamos el servicio
+
+CONFIUGURACION
+
+-vi etc/samba/smb.conf
+
+Añadimos:
+
+guest ok = Yes		#Añadimos estas lineas para poder ver la carpeta sin necesidad de tener un usuario
+guest only = Yes
